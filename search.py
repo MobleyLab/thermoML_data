@@ -136,9 +136,9 @@ picklefile2 = "alldata.pickle"
 
 datapath = os.getcwd()
 
-dfnew.to_csv(os.path.join(datapath,csvfile1))
+dfnew.to_csv(os.path.join(datapath,csvfile1),sep=';')
 dfnew.to_pickle(os.path.join(datapath,picklefile1))
-df.to_csv(os.path.join(datapath,csvfile2))
+df.to_csv(os.path.join(datapath,csvfile2),sep=';')
 df.to_pickle(os.path.join(datapath,picklefile2))
 
 
